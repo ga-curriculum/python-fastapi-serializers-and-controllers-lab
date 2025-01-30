@@ -1,11 +1,11 @@
 <h1>
-  <span class="prefix"></span>
-  <span class="headline">[tktk Headline]</span>
+  <span class="prefix">Python</span>
+  <span class="headline">FastAPI Serializers and Controllers Lab</span>
 </h1>
 
 ## About
 
-tktk Write a short but descriptive summary of the content in this module. Introduce the lab. What will the students build in this lab?
+A lab activity to practice defining and implementing serializers and controllers for the application's comments model.
 
 ## Content
 
@@ -16,32 +16,26 @@ tktk Write a short but descriptive summary of the content in this module. Introd
 
 ### Prerequisites
 
-- tktk
+- Python FastAPI Serializers and Controllers
 
 ### Time to complete
 
-Estimated time to complete core lab exercise: **tktk min**
+Estimated time to complete core lab exercise: **60 min**
 
 ### Starter code
 
-tktk If there is not a starter code repo that students will fork and clone to start this lab, then this section and all of its content should be removed.
+If you have a complete, working application from the `Python FastAPI Serializers and Controllers` Lesson, you may choose to use **a copy of** that codebase as starter code instead of the repo provided below.
 
-🟢 [Starter code](https://git.generalassemb.ly/modular-curriculum-all-courses/tktk)
+🟢 [Starter code](https://git.generalassemb.ly/modular-curriculum-all-courses/python-fastapi-serializers-and-controllers-solution)
 
 ### Solution code
 
-🏁 [Solution code](https://git.generalassemb.ly/modular-curriculum-all-courses/tktk)
-
-### Deployed sites
-
-tktk If there is not a deployed site related to this module this section and all of its content should be removed.
-
-🌐 [Live site](https://generalassemb.ly/tktk)
+🏁 [Solution code](https://git.generalassemb.ly/modular-curriculum-all-courses/python-fastapi-serializers-and-controllers-lab-solution)
 
 ### Course landing pages
 
-- [tktk-course-acronym - tktk Course Full Name](https://pages.git.generalassemb.ly/modular-curriculum-all-courses/tktk-module-name/canvas-landing-pages/tktk-course-acronym.html)
-- [Fallback](https://pages.git.generalassemb.ly/modular-curriculum-all-courses/tktk-module-name/canvas-landing-pages/fallback.html)
+- [APD - Advanced Python for Developers](https://pages.git.generalassemb.ly/modular-curriculum-all-courses/python-fastapi-serializers-and-controllers-lab/canvas-landing-pages/apd.html)
+- [Fallback](https://pages.git.generalassemb.ly/modular-curriculum-all-courses/python-fastapi-serializers-and-controllers-lab/canvas-landing-pages/fallback.html)
 
 ### Resources
 

@@ -1,58 +1,81 @@
 <h1>
-  <span class="headline">[tktk Headline]</span>
+  <span class="headline">FastAPI Serializers and Controllers Lab</span>
   <span class="subhead">Setup</span>
 </h1>
 
 ## Setup
 
-tktk The below is a generic starting point for lab setup. You may need to make adjustments to this.
+For this Lab, we’ll start by working with a pre-existing application that utilizes a PostgreSQL database instance, SQLAlchemy model and a database seeded with initial data.
 
-Open your Terminal application and navigate to your <code class="filepath">~/code/ga/labs</code> directory:
+> If you have a complete, working application from the `Python FastAPI Serializers and Controllers` Lesson, you may choose to use **a copy of** that codebase as starter code instead of the repo provided below.
 
-```bash
-cd ~/code/ga/labs
-```
+### 1. Clone the starter code
 
-### Fork and clone the starter code
-
-tktk Use the below instructions if students will need starter code from a separate module to complete the lab exercise. If they do not, delete this section and all of its contents.
-
-Fork the [[tktk Headline] Starter Code](https://git.generalassemb.ly/modular-curriculum-all-courses/tktk-module-name-starter-code) repository.
-
-Clone a copy of your remote repo locally by using the `git clone` command:
+We’ve provided a starter repository with the base application code. Clone the repository to your local machine and rename the folder for this lesson:
 
 ```bash
-git clone https://git.generalassemb.ly/<your-username>/tktk-module-name-starter-code.git tktk-module-name
+git clone https://git.generalassemb.ly/modular-curriculum-all-courses/python-fastapi-serializers-and-controllers-solution python-fastapi-serializers-and-controllers-lab
 ```
 
-Replace `<your-username>` (including the `<` and `>`) with your General Assembly GitHub Enterprise username before you run this command.
+### 2. Install dependencies:
 
-### Create and clone a GitHub repo
+This project uses `pipenv` for managing dependencies. To install everything the project needs, run:
 
-tktk Use the below instructions if students do not need starter code from a separate module to complete the lab exercise. If they do, delete this section and all of its contents.
+```sh
+ pipenv install
+```
 
-Make a new repository on [GitHub](https://github.com/) named `tktk-module-name`.
+### 3. Activate the virtual environment:
 
-Clone a copy of your remote repo locally by using the `git clone` command:
+```sh
+ pipenv shell
+```
+
+### 4. Set up the database:
+
+Set up your PostgreSQL database:
+
+- Ensure PostgreSQL is installed and running on your machine.
+- Create a database named `teas_db` if it does not already exist:
 
 ```bash
-git clone https://github.com/<your-username>/tktk-module-name.git
+createdb teas_db
 ```
 
-Replace `<your-username>` (including the `<` and `>`) with your GitHub username before you run this command.
+Seed the database with data:
 
-### Launch in VS Code
-
-Next, `cd` into the cloned directory, <code class="filepath">tktk-module-name</code>:
+- Run the `seed.py` file to reset the database by dropping existing tables and repopulating it with starter data:
 
 ```bash
-cd tktk-module-name
+pipenv run python seed.py
 ```
 
-Open the contents of the directory in VS Code:
+> You should see output indicating the database was successfully seeded. If there are any errors, check the `db_URI` in the `config/environment.py` file.
+
+### 5. Start the development server:
+
+```bash
+pipenv run uvicorn main:app --reload
+```
+
+> You should now have the app running. Visit [`http://127.0.0.1:8000`](http://127.0.0.1:8000) in your browser to confirm it’s working.
+
+You can test each endpoint using FastAPI’s built-in documentation.
+
+> Navigate to FastAPI Documentation: Open [`http://localhost:8000/docs`](http://localhost:8000/docs) in your browser.
+
+Open the application in Visual Studio Code:
 
 ```bash
 code .
 ```
 
-tktk Are there more lab setup steps? Don't forget to add them here.
+### Notes on Configuration
+
+- The database connection string is defined in the `config/environment.py` file:
+
+  ```python
+  db_URI = "postgresql://postgres:postgres@localhost:5432/teas_db"
+  ```
+
+- Ensure your PostgreSQL instance is configured to allow connections with the provided credentials.

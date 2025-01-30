@@ -12,13 +12,21 @@ import "microlessons.pkl" as mls
 
 repo {
   // This name is shown in the header nav to navigate users home
-  friendlyName = "[tktk Headline]"
+  friendlyName = "FastAPI Serializers and Controllers Lab"
   // This must match the repo name as it appears on GitHub exactly
-  name = "tktk-module-name"
+  name = "python-fastapi-serializers-and-controllers-lab"
   type = "Lab"
 }
 
 courses {
+  new {
+    name = "apd"
+    microlessons {
+      // Add microlessons here, in the order they should be delivered
+      mls.setup
+      mls.exercise
+    }
+  }
   new {
     // Do not remove this fallback course!
     name = "fallback"
@@ -26,10 +34,6 @@ courses {
       // Add microlessons here, in the order they should be delivered
       mls.setup
       mls.exercise
-      // You can make course-specific adjustments using a syntax like this:
-      (mls.levelUp) {
-        type = "Level Up content"
-      }
     }
   }
 }
