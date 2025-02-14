@@ -24,8 +24,6 @@ Estimated time to complete core lab exercise: **60 min**
 
 ### Starter code
 
-If you have a complete, working application from the `Python FastAPI Serializers and Controllers` Lesson, you may choose to use **a copy of** that codebase as starter code instead of the repo provided below.
-
 🟢 [Starter code](https://git.generalassemb.ly/modular-curriculum-all-courses/python-fastapi-serializers-and-controllers-solution)
 
 ### Solution code
