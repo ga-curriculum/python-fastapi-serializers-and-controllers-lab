@@ -24,11 +24,11 @@ Estimated time to complete core lab exercise: **60 min**
 
 ### Starter code
 
-🟢 [Starter code](https://git.generalassemb.ly/modular-curriculum-all-courses/python-fastapi-serializers-and-controllers-solution)
+🟢 [Starter code](https://github.com/ga-curriculum/python-fastapi-serializers-and-controllers-solution)
 
 ### Solution code
 
-🏁 [Solution code](https://git.generalassemb.ly/modular-curriculum-all-courses/python-fastapi-serializers-and-controllers-lab-solution)
+🏁 [Solution code](https://github.com/ga-curriculum/python-fastapi-serializers-and-controllers-lab-solution)
 
 ### Course landing pages
 
